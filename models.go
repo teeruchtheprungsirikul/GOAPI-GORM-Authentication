@@ -1,7 +1,11 @@
 package main
 
+import (
+	"gorm.io/gorm"
+)
+
 type Book struct {
-	ID          int64
+	gorm.Model
 	Name        string
 	Author      string
 	Description string
